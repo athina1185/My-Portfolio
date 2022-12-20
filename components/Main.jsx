@@ -1,4 +1,5 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
@@ -12,7 +13,20 @@ const Main = () => {
                 <h1 className="text-gray-700">
                 Hello, I'm  <span className=" text-indigo-500">Athina</span>
                 </h1>
-                <h1 className="text-gray-700 py-2">A Web Developer and designer.</h1>
+                <h1 className="text-gray-700 py-2">
+                    <Typewriter 
+                        options = {{
+                           strings: [
+                               "A web Developer ",
+                               " A Designer "
+                           ],
+                           changeDelay: 3,
+                           changeDeleteSpeed: 2,
+                           autoStart: true,
+                           loop: true,
+
+                        }} />
+                    </h1>
                 <p>
                 I enjoy building and designing scalable products with great user experience
                 </p>
