@@ -3,7 +3,7 @@ import {BsFillMoonStarsFill} from "react-icons/bs";
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub, } from "react-icons/ai";
 import Image from 'next/image';
 import ath from '../public/ath-wave.png';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import Main from '../components/Main';
 import About from '../components/About';
 import Skills from '../components/Skills';
@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* <main className="bg-white px-10">
         <section className="min-h-screen"> */}
-          <Navbar />
+          
           <Main />
           <About />
           <Skills />
