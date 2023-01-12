@@ -21,7 +21,7 @@ const country = () => {
               <h2>Overview</h2>
               <p>This is a country list of the world, where users can view each country detail as well as select and unselect favourite countrty.</p>
               <button className="px-8 py-2 mt-4">Demo</button>
-              <button className="px-8 py-2 ml-8 mt-4">Code</button>
+              <a href="https://github.com/athina1185/isafs2-frontend-project"><button className="px-8 py-2 ml-8 mt-4">Code</button></a>
           </div>
           <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-400 rounded-lg py-4">
             <div className="p-2">
@@ -34,7 +34,7 @@ const country = () => {
                 </div>
             </div>
           </div>
-          <Link href="/">
+          <Link href="/#projects">
               <p className="underline cursor-pointer">Back</p>
           </Link>
         </div>

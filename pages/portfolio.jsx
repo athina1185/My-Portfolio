@@ -22,7 +22,7 @@ const portfolio = () => {
               <h2>Overview</h2>
               <p>This is an online representation of the projects i have created as well as my skills</p>
               <button className="px-8 py-2 mt-4">Demo</button>
-              <button className="px-8 py-2 ml-8 mt-4">Code</button>
+              <a href=" https://github.com/athina1185/My-Portfolio"><button className="px-8 py-2 ml-8 mt-4">Code</button></a>
           </div>
           <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-400 rounded-lg py-4">
             <div className="p-2">

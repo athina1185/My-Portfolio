@@ -22,7 +22,7 @@ const guess = () => {
               <h2>Overview</h2>
               <p>A fun number guessing game, where users guess a number between 1 - 100</p>
               <button className="px-8 py-2 mt-4">Demo</button>
-              <button className="px-8 py-2 ml-8 mt-4">Code</button>
+              <a href="https://github.com/athina1185/Number-guessing-game/commit/b8580aae6e011f02d666d4c4ffcadde861686219"><button className="px-8 py-2 ml-8 mt-4">Code</button></a>
           </div>
           <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-400 rounded-lg py-4">
             <div className="p-2">

@@ -11,7 +11,7 @@ const myspace = () => {
             <div className="w-full h-[30vh] lg:h-[40vh] absolute top-0 left-0 bg-black/80 z-10"></div>
             <Image className="absolute z-1" layout="fill" objectFit="cover" src={myspaceImg}/>
             <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 text-white p-2">
-                <h2 className="py-2">My Space</h2>
+                <h2 className="py-2">Spacetagram</h2>
                 {/* <h3>React, React Hooks, RESTAPI</h3> */}
             </div>
         </div>
@@ -21,7 +21,7 @@ const myspace = () => {
               <h2>Overview</h2>
               <p>A web app built with React that displays random images of space, obtained from the NASA API</p>
               <button className="px-8 py-2 mt-4">Demo</button>
-              <button className="px-8 py-2 ml-8 mt-4">Code</button>
+              <a href="https://github.com/athina1185/spacetagram"><button className="px-8 py-2 ml-8 mt-4">Code</button></a>
           </div>
           <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-400 rounded-lg py-4">
             <div className="p-2">

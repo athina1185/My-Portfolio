@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from "react-icons/ai";
 import {FaGithub, FaLinkedinIn} from "react-icons/fa";
 import { BsPersonLinesFill } from 'react-icons/bs';
@@ -7,6 +8,28 @@ import { BsPersonLinesFill } from 'react-icons/bs';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState('#f2f2f2');
+  const [linkCol, setLinkCol] = useState('#1f2937');
+  const router = useRouter()
+
+  useEffect(()=>{
+    if (
+      router.asPath === '/country' ||
+      router.asPath === '/dictionary' ||
+      router.asPath === '/feedback' ||
+      router.asPath === '/guess' ||
+      router.asPath === '/login' ||
+      router.asPath === '/myspace' ||
+      router.asPath === '/portfolio' 
+    ) {
+       setNavBg('transparent');
+       setLinkCol('#f2f2f2');
+    } else {
+      setNavBg('#f2f2f2');
+      setLinkCol('#1f2937');
+    }
+  },[router]);
+
   
   const handleNav = () => {
     setNav(!nav);
@@ -24,11 +47,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] " :"fixed w-full h-20 z-[100] " }>
+    <div style={{backgroundColor: `${navBg}`}}className={shadow ? "fixed w-full h-20 shadow-xl z-[100] " :"fixed w-full h-20 z-[100] " }>
       <div className="flex justify-between items-center w-full  px-2 2xl:px-16">
         <Link href='/'><h1 className="static text-4xl text-transparent font-extrabold -font-burtons bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">&lt;ATHINA CODEs/&gt;</h1></Link>
         <div>
-            <ul className="hidden md:flex">
+            <ul style={{color: `${linkCol}`}} className="hidden md:flex">
                 <Link href="/">
                     <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
                 </Link>
@@ -86,10 +109,10 @@ const Navbar = () => {
              <p className="uppercase tracking-widest text-indigo-400 font-semibold">Let's Connect</p>
              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                 <FaLinkedinIn />
+                <a href="https://www.linkedin.com/in/athina-oluwafunke-owoeye-6562b6225/"> <FaLinkedinIn /></a>
                </div>
                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                 <FaGithub />
+                 <a href="https://github.com/athina1185"><FaGithub /></a>
                </div>
                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                  <AiOutlineMail />

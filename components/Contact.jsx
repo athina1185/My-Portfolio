@@ -30,10 +30,10 @@ const Contact = () => {
                    <p className="pt-8">CONNECT WITH ME</p>
                    <div className="flex items-center justify-between py-4">
                    <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                         <FaLinkedinIn />
+                         <a href="https://www.linkedin.com/in/athina-oluwafunke-owoeye-6562b6225/"><FaLinkedinIn /></a>
                      </div>
                      <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                         <FaGithub />
+                         <a href="https://github.com/athina1185"><FaGithub /></a>
                      </div>
                      <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                          <AiOutlineMail />
