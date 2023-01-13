@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from "react-icons/ai";
-import {FaGithub, FaLinkedinIn} from "react-icons/fa";
-import { BsPersonLinesFill } from 'react-icons/bs';
+import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
+import {FaGithub, FaLinkedinIn, FaBehance,FaRegFileAlt} from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -115,10 +114,10 @@ const Navbar = () => {
                  <a href="https://github.com/athina1185"><FaGithub /></a>
                </div>
                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                 <AiOutlineMail />
+               <a href="https://www.behance.net/funkeowoeye/appreciated"><FaBehance /></a>
                </div>
                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                 <BsPersonLinesFill />
+               <a href="https://docs.google.com/document/d/1CmNdixEfAfFThxYjzGv2HhEwd5A4rUo7OeZHbF_xXrY/edit#"><FaRegFileAlt /></a>
                </div>
              </div>
            </div>

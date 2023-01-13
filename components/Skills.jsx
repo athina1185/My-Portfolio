@@ -10,10 +10,11 @@ import nodejs from '../public/assets/node-js.png'
 import git from '../public/assets/git.png'
 import figma from '../public/assets/figma.png'
 import java from '../public/assets/java.png'
+import ruby from '../public/assets/ruby.png'
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen py-2">
+    <div id="skills" className="w-full lg:h-screen py-2 px-2">
         <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
            <p className="text-indigo-500 text-xl tracking-widest uppercase">Skills</p>
            <h2 className="py-4">What I Do</h2>
@@ -117,6 +118,16 @@ const Skills = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                    <h3>Figma</h3>
+                </div>
+           </div>
+           </div>
+           <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300">
+           <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Image src={ruby} />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                   <h3>Ruby</h3>
                 </div>
            </div>
            </div>

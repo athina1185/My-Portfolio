@@ -10,8 +10,7 @@ const About = () => {
                <h2>So, who am i?</h2>
                <p className="text-gray-600 py-2">I am your unusual developer!</p>
                <p className="-tracking-wide ">
-               I have a degree in physiotherapy, which after graduation i worked in a government owned hospital in Greece. I have always been passionate about computers and technology as a whole , i remember how i use to design and make complimentary cards for people just for fun. 
-               During the pandemic, i started working with HTML and CSS to make static websites. Intrigued with how programming can be, i was excited to learn more. I started learning javascript to add interactivity to websites. I am currently spending my time building projects,and learning new technologies.
+               I graduated with a degree in physiotherapy and worked in a government-owned hospital in Greece. In addition to my healthcare background, I have always had a passion for computers and technology. As a hobby, I used to design and create complimentary cards. During the pandemic, I became interested in web development and began learning HTML and CSS to create static websites. As my interest in programming grew, I decided to expand my skillset by learning JavaScript to add interactivity to my website
 
                </p>
             </div>

@@ -1,8 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonFill } from 'react-icons/bs'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaBehance, FaGithub, FaLinkedinIn, FaRegFileAlt} from 'react-icons/fa'
 
 const Main = () => {
   return (
@@ -38,10 +37,10 @@ const Main = () => {
                         <a href="https://github.com/athina1185"> <FaGithub /></a>
                      </div>
                      <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                         <AiOutlineMail />
+                         <a href="https://www.behance.net/funkeowoeye/appreciated"><FaBehance /></a>
                      </div>
                      <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                         <BsFillPersonFill/>
+                         <a href="https://docs.google.com/document/d/1CmNdixEfAfFThxYjzGv2HhEwd5A4rUo7OeZHbF_xXrY/edit#"><FaRegFileAlt /></a>
                      </div>
                 </div>
             </div>

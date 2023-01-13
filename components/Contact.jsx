@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineMail } from 'react-icons/ai'
+// import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaBehance, FaRegFileAlt } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 
 import ath from '../public/ath-wave.png'
@@ -17,7 +17,7 @@ const Contact = () => {
        <div className="grid lg:grid-cols-5 gap-8">
    {/* left section */}
       <div className="col-span-3 lg:col-span-2 w-full h-full shadow-md shadow-gray-400 rounded-md">
-        <div className="lg:p-4 h-full">
+        <div className=" px-2 lg:p-4 h-full">
            <div>
                <Image className="hover:scale-105 ease-in duration-300" src={ath}/>
            </div>
@@ -36,10 +36,10 @@ const Contact = () => {
                          <a href="https://github.com/athina1185"><FaGithub /></a>
                      </div>
                      <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                         <AiOutlineMail />
+                     <a href="https://www.behance.net/funkeowoeye/appreciated"><FaBehance /></a>
                      </div>
                      <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                         <BsFillPersonFill/>
+                     <a href="https://docs.google.com/document/d/1CmNdixEfAfFThxYjzGv2HhEwd5A4rUo7OeZHbF_xXrY/edit#"><FaRegFileAlt /></a>
                      </div>
                    </div>
                </div>
