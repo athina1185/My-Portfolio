@@ -16,7 +16,7 @@ const Main = () => {
                     <Typewriter 
                         options = {{
                            strings: [
-                               "A web Developer ",
+                               "A Web Developer ",
                                " A Designer "
                            ],
                            changeDelay: 3,
