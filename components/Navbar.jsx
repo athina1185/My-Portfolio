@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <div style={{backgroundColor: `${navBg}`}}className={shadow ? "fixed w-full h-20 shadow-xl z-[100] " :"fixed w-full h-20 z-[100] " }>
-      <div className="flex justify-between items-center w-full  px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full  px-2 2xl:px-16 pt-4">
         <Link href='/'><h1 className="static text-4xl text-transparent font-extrabold -font-burtons bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">&lt;ATHINA CODEs/&gt;</h1></Link>
         <div>
             <ul style={{color: `${linkCol}`}} className="hidden md:flex">
